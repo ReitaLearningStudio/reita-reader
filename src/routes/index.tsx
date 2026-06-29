@@ -355,7 +355,7 @@ function Home() {
               Hello, I'm <span className="italic">Rita Onyia</span>.
             </h2>
             <div className="mt-6 space-y-4 text-foreground/75 leading-relaxed text-lg">
-              <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and am passionate about helping children develop the literacy skills they need to succeed in school and beyond.</p>
+              <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and i am passionate about helping children develop the literacy skills they need to succeed in school and beyond.</p>
               <p>Through personalised instruction and evidence-based teaching strategies, our academy helps children become confident, capable and enthusiastic readers.</p>
             </div>
             <div className="mt-8 grid sm:grid-cols-2 gap-3">
