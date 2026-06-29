@@ -343,7 +343,7 @@ function Home() {
             <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border-8 border-background">
               <img
                 src={founderAsset.url}
-                alt="Reita Onyia, founder of Reita Learning Studio"
+                alt="Rita Onyia, founder of Reita Learning Studio"
                 className="w-full h-full object-cover aspect-[4/5]"
                 loading="lazy"
               />
@@ -352,7 +352,7 @@ function Home() {
           <div>
             <p className="text-sm font-semibold tracking-widest uppercase text-gold">Meet the Founder</p>
             <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-forest-deep">
-              Hello, I'm <span className="italic">Reita Onyia</span>.
+              Hello, I'm <span className="italic">Rita Onyia</span>.
             </h2>
             <div className="mt-6 space-y-4 text-foreground/75 leading-relaxed text-lg">
               <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and am passionate about helping children develop the literacy skills they need to succeed in school and beyond.</p>
@@ -373,10 +373,10 @@ function Home() {
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-6 py-3 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
-                <MessageCircle className="w-4 h-4" /> Book a Free Assessment with Reita
+                <MessageCircle className="w-4 h-4" /> Book a Free Assessment with Rita
               </a>
               <a href={EMAIL_URL} className="inline-flex items-center gap-2 border-2 border-forest/15 text-forest-deep px-6 py-3 rounded-full text-sm font-semibold hover:border-forest transition">
-                <Mail className="w-4 h-4" /> Email Reita
+                <Mail className="w-4 h-4" /> Email Rita
               </a>
             </div>
           </div>
