@@ -183,7 +183,7 @@ function Home() {
             <div className="absolute -inset-4 bg-gradient-to-br from-gold/30 to-forest/20 rounded-[2.5rem] blur-2xl -z-10" />
             <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border-8 border-background">
               <img
-                src={heroAsset.url}
+                src={heroAsset}
                 alt="Two smiling children reading books together in a warm classroom"
                 className="w-full h-full object-cover aspect-[4/5] lg:aspect-[5/6]"
                 loading="eager"
@@ -342,7 +342,7 @@ function Home() {
             <div aria-hidden className="absolute -inset-4 bg-gradient-to-br from-gold/30 to-forest/15 rounded-[2.5rem] blur-2xl -z-10" />
             <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border-8 border-background">
               <img
-                src={founderAsset.url}
+                src={founderAsset}
                 alt="Rita Onyia, founder of Reita Learning Studio"
                 className="w-full h-full object-cover aspect-[4/5]"
                 loading="lazy"
