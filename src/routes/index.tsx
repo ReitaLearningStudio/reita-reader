@@ -115,7 +115,7 @@ function Home() {
               <BookOpen className="w-5 h-5" />
             </span>
             <span className="font-display text-xl font-bold text-forest-deep tracking-tight">
-              Reita <span className="text-gold">Learning</span>
+              Reita <span className="text-gold">Learning Studio</span>
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
