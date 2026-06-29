@@ -300,8 +300,8 @@ function Home() {
                 <div className="text-xs font-semibold text-gold tracking-widest">PROGRAMME 0{i + 1}</div>
                 <h3 className="mt-3 text-2xl font-bold text-forest-deep">{p.t}</h3>
                 <p className="mt-3 text-foreground/70 leading-relaxed">{p.d}</p>
-                <a href="#cta" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-forest-deep">
-                  Learn more <ArrowRight className="w-4 h-4" />
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-forest-deep">
+                  Book a free assessment <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
