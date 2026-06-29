@@ -17,5 +17,5 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  ...(nitroPreset ? { nitro: { config: { preset: nitroPreset } } } : {}),
+  ...(nitroPreset ? { nitro: { preset: nitroPreset } } : {}),
 });
