@@ -5,8 +5,8 @@ import {
   FileText, ShieldCheck, Compass, ArrowRight, Star, CheckCircle2,
   Mail, MessageCircle, Instagram, Facebook, Menu, X, Quote,
 } from "lucide-react";
-import heroAsset from "@/assets/hero-readers.png.asset.json";
-import founderAsset from "@/assets/founder.png.asset.json";
+import heroAsset from "@/assets/hero-readers.png";
+import founderAsset from "@/assets/founder.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
