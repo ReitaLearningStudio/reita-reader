@@ -461,10 +461,3 @@ function Home() {
   );
 }
 
-const nav = [
-  { href: "#programmes", label: "Programmes" },
-  { href: "#why", label: "Why Reita" },
-  { href: "#process", label: "How it Works" },
-  { href: "#founder", label: "Founder" },
-  { href: "#stories", label: "Stories" },
-];
