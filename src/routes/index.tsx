@@ -427,9 +427,17 @@ function Home() {
               Give your child the opportunity to build strong reading skills, greater confidence and a
               lifelong love for learning. Start with a free reading assessment today.
             </p>
-            <a href="#cta" className="mt-10 inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-cream transition">
-              Book Your Free Reading Assessment <ArrowRight className="w-4 h-4" />
-            </a>
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-cream transition">
+                <MessageCircle className="w-4 h-4" /> WhatsApp to Book
+              </a>
+              <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-transparent border-2 border-cream/40 text-cream px-8 py-4 rounded-full font-bold hover:bg-cream hover:text-forest-deep transition">
+                <Mail className="w-4 h-4" /> Email to Book
+              </a>
+            </div>
+            <p className="mt-6 text-sm text-cream/70">
+              {WHATSAPP_NUMBER} &nbsp;•&nbsp; {EMAIL}
+            </p>
           </div>
         </div>
       </section>
