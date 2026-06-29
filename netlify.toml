@@ -1,0 +1,10 @@
+# Netlify build configuration for the TanStack Start (nitro) app.
+# Using the nitro "netlify" preset emits a Netlify-compatible build:
+#   - static assets to `dist/`
+#   - SSR handler to `.netlify/functions-internal/server`
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
