@@ -168,11 +168,11 @@ function Home() {
               comprehension and writing.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#cta" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest-deep transition">
-                Book a Free Reading Assessment <ArrowRight className="w-4 h-4" />
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest-deep transition">
+                <MessageCircle className="w-4 h-4" /> Book a Free Reading Assessment
               </a>
-              <a href="#programmes" className="inline-flex items-center gap-2 bg-background border-2 border-forest/15 text-forest-deep px-7 py-4 rounded-full font-semibold hover:border-forest transition">
-                Explore Our Programmes
+              <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-background border-2 border-forest/15 text-forest-deep px-7 py-4 rounded-full font-semibold hover:border-forest transition">
+                <Mail className="w-4 h-4" /> Email Us
               </a>
             </div>
             <p className="mt-6 font-display italic text-forest text-lg">
