@@ -37,6 +37,20 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+/* ─────────── Contact details ─────────── */
+const EMAIL = "ReitaLearningStudio@gmail.com";
+const WHATSAPP_NUMBER = "+234 704 5928 232";
+const WHATSAPP_DIGITS = "2347045928232";
+const WHATSAPP_MSG = encodeURIComponent(
+  "Hello Reita Learning Studio! I'd like to book a free reading assessment for my child."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_DIGITS}?text=${WHATSAPP_MSG}`;
+const EMAIL_URL = `mailto:${EMAIL}?subject=${encodeURIComponent(
+  "Free Reading Assessment Booking"
+)}&body=${encodeURIComponent(
+  "Hello Reita Learning Studio,\n\nI'd like to book a free reading assessment for my child.\n\nChild's age:\nPreferred days/times:\nAny notes:\n\nThank you!"
+)}`;
+
 /* ─────────── Tiny utilities ─────────── */
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
