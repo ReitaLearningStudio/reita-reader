@@ -125,8 +125,8 @@ function Home() {
               </a>
             ))}
           </nav>
-          <a href="#cta" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
-            Book Assessment <ArrowRight className="w-4 h-4" />
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
+            Book Free Assessment <ArrowRight className="w-4 h-4" />
           </a>
           <button
             className="md:hidden p-2 rounded-lg border border-border"
