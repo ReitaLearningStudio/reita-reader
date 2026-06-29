@@ -470,8 +470,16 @@ function Home() {
           <div>
             <h4 className="font-display text-base font-bold text-cream mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="mailto:hello@reitalearningstudio.com" className="flex items-center gap-2 hover:text-gold transition"><Mail className="w-4 h-4" /> hello@reitalearningstudio.com</a></li>
-              <li><a href="#" className="flex items-center gap-2 hover:text-gold transition"><MessageCircle className="w-4 h-4" /> WhatsApp</a></li>
+              <li>
+                <a href={EMAIL_URL} className="flex items-start gap-2 hover:text-gold transition break-all">
+                  <Mail className="w-4 h-4 mt-0.5 shrink-0" /> {EMAIL}
+                </a>
+              </li>
+              <li>
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold transition">
+                  <MessageCircle className="w-4 h-4" /> WhatsApp {WHATSAPP_NUMBER}
+                </a>
+              </li>
             </ul>
             <div className="mt-5 flex gap-3">
               <a href="#" aria-label="Instagram" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition"><Instagram className="w-4 h-4" /></a>
