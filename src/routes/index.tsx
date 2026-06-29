@@ -37,6 +37,20 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+/* ─────────── Contact details ─────────── */
+const EMAIL = "ReitaLearningStudio@gmail.com";
+const WHATSAPP_NUMBER = "+234 704 5928 232";
+const WHATSAPP_DIGITS = "2347045928232";
+const WHATSAPP_MSG = encodeURIComponent(
+  "Hello Reita Learning Studio! I'd like to book a free reading assessment for my child."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_DIGITS}?text=${WHATSAPP_MSG}`;
+const EMAIL_URL = `mailto:${EMAIL}?subject=${encodeURIComponent(
+  "Free Reading Assessment Booking"
+)}&body=${encodeURIComponent(
+  "Hello Reita Learning Studio,\n\nI'd like to book a free reading assessment for my child.\n\nChild's age:\nPreferred days/times:\nAny notes:\n\nThank you!"
+)}`;
+
 /* ─────────── Tiny utilities ─────────── */
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
@@ -111,8 +125,8 @@ function Home() {
               </a>
             ))}
           </nav>
-          <a href="#cta" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
-            Book Assessment <ArrowRight className="w-4 h-4" />
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
+            Book Free Assessment <ArrowRight className="w-4 h-4" />
           </a>
           <button
             className="md:hidden p-2 rounded-lg border border-border"
@@ -129,8 +143,8 @@ function Home() {
                 {n.label}
               </a>
             ))}
-            <a href="#cta" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-3 rounded-full text-sm font-semibold">
-              Book Assessment <ArrowRight className="w-4 h-4" />
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-3 rounded-full text-sm font-semibold">
+              Book Free Assessment <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         )}
@@ -154,11 +168,11 @@ function Home() {
               comprehension and writing.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#cta" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest-deep transition">
-                Book a Free Reading Assessment <ArrowRight className="w-4 h-4" />
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest-deep transition">
+                <MessageCircle className="w-4 h-4" /> Book a Free Reading Assessment
               </a>
-              <a href="#programmes" className="inline-flex items-center gap-2 bg-background border-2 border-forest/15 text-forest-deep px-7 py-4 rounded-full font-semibold hover:border-forest transition">
-                Explore Our Programmes
+              <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-background border-2 border-forest/15 text-forest-deep px-7 py-4 rounded-full font-semibold hover:border-forest transition">
+                <Mail className="w-4 h-4" /> Email Us
               </a>
             </div>
             <p className="mt-6 font-display italic text-forest text-lg">
@@ -286,8 +300,8 @@ function Home() {
                 <div className="text-xs font-semibold text-gold tracking-widest">PROGRAMME 0{i + 1}</div>
                 <h3 className="mt-3 text-2xl font-bold text-forest-deep">{p.t}</h3>
                 <p className="mt-3 text-foreground/70 leading-relaxed">{p.d}</p>
-                <a href="#cta" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-forest-deep">
-                  Learn more <ArrowRight className="w-4 h-4" />
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-forest-deep">
+                  Book a free assessment <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -357,6 +371,14 @@ function Home() {
                 </div>
               ))}
             </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-6 py-3 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
+                <MessageCircle className="w-4 h-4" /> Book a Free Assessment with Rita
+              </a>
+              <a href={EMAIL_URL} className="inline-flex items-center gap-2 border-2 border-forest/15 text-forest-deep px-6 py-3 rounded-full text-sm font-semibold hover:border-forest transition">
+                <Mail className="w-4 h-4" /> Email Rita
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -405,9 +427,17 @@ function Home() {
               Give your child the opportunity to build strong reading skills, greater confidence and a
               lifelong love for learning. Start with a free reading assessment today.
             </p>
-            <a href="#cta" className="mt-10 inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-cream transition">
-              Book Your Free Reading Assessment <ArrowRight className="w-4 h-4" />
-            </a>
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-cream transition">
+                <MessageCircle className="w-4 h-4" /> WhatsApp to Book
+              </a>
+              <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-transparent border-2 border-cream/40 text-cream px-8 py-4 rounded-full font-bold hover:bg-cream hover:text-forest-deep transition">
+                <Mail className="w-4 h-4" /> Email to Book
+              </a>
+            </div>
+            <p className="mt-6 text-sm text-cream/70">
+              {WHATSAPP_NUMBER} &nbsp;•&nbsp; {EMAIL}
+            </p>
           </div>
         </div>
       </section>
@@ -440,8 +470,16 @@ function Home() {
           <div>
             <h4 className="font-display text-base font-bold text-cream mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="mailto:hello@reitalearningstudio.com" className="flex items-center gap-2 hover:text-gold transition"><Mail className="w-4 h-4" /> hello@reitalearningstudio.com</a></li>
-              <li><a href="#" className="flex items-center gap-2 hover:text-gold transition"><MessageCircle className="w-4 h-4" /> WhatsApp</a></li>
+              <li>
+                <a href={EMAIL_URL} className="flex items-start gap-2 hover:text-gold transition break-all">
+                  <Mail className="w-4 h-4 mt-0.5 shrink-0" /> {EMAIL}
+                </a>
+              </li>
+              <li>
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold transition">
+                  <MessageCircle className="w-4 h-4" /> WhatsApp {WHATSAPP_NUMBER}
+                </a>
+              </li>
             </ul>
             <div className="mt-5 flex gap-3">
               <a href="#" aria-label="Instagram" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition"><Instagram className="w-4 h-4" /></a>
