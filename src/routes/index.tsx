@@ -143,8 +143,8 @@ function Home() {
                 {n.label}
               </a>
             ))}
-            <a href="#cta" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-3 rounded-full text-sm font-semibold">
-              Book Assessment <ArrowRight className="w-4 h-4" />
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-3 rounded-full text-sm font-semibold">
+              Book Free Assessment <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         )}
