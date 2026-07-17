@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import heroAsset from "@/assets/hero-readers.png";
 import founderAsset from "@/assets/founder.png";
-import logoAsset from "@/assets/logo.jpg";
+import logoAsset from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
