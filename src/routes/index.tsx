@@ -113,7 +113,7 @@ function Home() {
         <div className="container-px max-w-7xl mx-auto flex items-center justify-between h-18 py-4">
           <a href="#top" className="flex items-center gap-2.5 shrink-0">
             <img 
-              src={logoAsset.src} 
+              src={logoAsset} 
               alt="Reita Learning Studio Logo" 
               className="h-14 w-auto"
             />
@@ -448,7 +448,7 @@ function Home() {
           <div className="lg:col-span-2 max-w-sm">
             <div className="flex items-center gap-2.5">
               <img 
-                src={logoAsset.src} 
+                src={logoAsset} 
                 alt="Reita Learning Studio Logo" 
                 className="h-14 w-auto"
               />
