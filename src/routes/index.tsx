@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
-  BookOpen, GraduationCap, Sparkles, Globe2, Heart, Users, Calendar,
+  GraduationCap, Sparkles, Globe2, Heart, Users, Calendar,
   FileText, ShieldCheck, Compass, ArrowRight, Star, CheckCircle2,
   Mail, MessageCircle, Instagram, Facebook, Menu, X, Quote,
 } from "lucide-react";
 import heroAsset from "@/assets/hero-readers.png";
 import founderAsset from "@/assets/founder.png";
+import logoAsset from "@/assets/logo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -111,12 +112,11 @@ function Home() {
       <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
         <div className="container-px max-w-7xl mx-auto flex items-center justify-between h-18 py-4">
           <a href="#top" className="flex items-center gap-2.5 shrink-0">
-            <span className="inline-grid place-items-center w-10 h-10 rounded-xl bg-forest text-cream">
-              <BookOpen className="w-5 h-5" />
-            </span>
-            <span className="font-display text-xl font-bold text-forest-deep tracking-tight">
-              Reita <span className="text-gold">Learning Studio</span>
-            </span>
+            <img 
+              src={logoAsset.src} 
+              alt="Reita Learning Studio Logo" 
+              className="h-14 w-auto"
+            />
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             {nav.map(n => (
@@ -125,7 +125,7 @@ function Home() {
               </a>
             ))}
           </nav>
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest/90 transition">
             Book Free Assessment <ArrowRight className="w-4 h-4" />
           </a>
           <button
@@ -143,7 +143,7 @@ function Home() {
                 {n.label}
               </a>
             ))}
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-3 rounded-full text-sm font-semibold">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest/90 transition">
               Book Free Assessment <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -168,7 +168,7 @@ function Home() {
               comprehension and writing.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest-deep transition">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-7 py-4 rounded-full font-semibold shadow-elegant hover:bg-forest/90 transition">
                 <MessageCircle className="w-4 h-4" /> Book a Free Reading Assessment
               </a>
               <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-background border-2 border-forest/15 text-forest-deep px-7 py-4 rounded-full font-semibold hover:border-forest transition">
@@ -208,7 +208,7 @@ function Home() {
         <div className="container-px max-w-7xl mx-auto py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { Icon: GraduationCap, label: "Qualified Educators" },
-            { Icon: BookOpen, label: "500+ Lessons Delivered" },
+            { Icon: Sparkles, label: "500+ Lessons Delivered" },
             { Icon: Heart, label: "95% Parent Satisfaction" },
             { Icon: Globe2, label: "Families Across 10+ Countries" },
           ].map(({ Icon, label }) => (
@@ -355,7 +355,7 @@ function Home() {
               Hello, I'm <span className="italic">Rita Onyia</span>.
             </h2>
             <div className="mt-6 space-y-4 text-foreground/75 leading-relaxed text-lg">
-              <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and i am passionate about helping children develop the literacy skills they need to succeed in school and beyond.</p>
+              <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and i am passionate about helping children develop the literacy skills they need to succeed in school and in life.</p>
               <p>Through personalised instruction and evidence-based teaching strategies, our academy helps children become confident, capable and enthusiastic readers.</p>
             </div>
             <div className="mt-8 grid sm:grid-cols-2 gap-3">
@@ -372,7 +372,7 @@ function Home() {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-6 py-3 rounded-full text-sm font-semibold hover:bg-forest-deep transition shadow-soft">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-forest text-cream px-6 py-3 rounded-full text-sm font-semibold hover:bg-forest/90 transition">
                 <MessageCircle className="w-4 h-4" /> Book a Free Assessment with Rita
               </a>
               <a href={EMAIL_URL} className="inline-flex items-center gap-2 border-2 border-forest/15 text-forest-deep px-6 py-3 rounded-full text-sm font-semibold hover:border-forest transition">
@@ -396,7 +396,7 @@ function Home() {
             {[
               { Icon: Calendar,   t: "Book a Free Reading Assessment", d: "A relaxed conversation to understand your child's current reading and goals." },
               { Icon: Compass,    t: "Receive a Personalised Learning Plan", d: "A clear plan tailored to your child's age, level and learning style." },
-              { Icon: BookOpen,   t: "Attend Engaging Online Lessons", d: "Warm, focused one-to-one sessions at times that fit your family." },
+              { Icon: Sparkles,   t: "Attend Engaging Online Lessons", d: "Warm, focused one-to-one sessions at times that fit your family." },
               { Icon: Sparkles,   t: "Celebrate Your Child's Progress", d: "Regular reports and visible growth in confidence, fluency and joy." },
             ].map((s, i) => (
               <div key={s.t} className="relative rounded-3xl bg-background border border-border p-7 hover:shadow-elegant transition">
@@ -428,7 +428,7 @@ function Home() {
               lifelong love for learning. Start with a free reading assessment today.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-cream transition">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-forest-deep px-8 py-4 rounded-full font-bold shadow-elegant hover:bg-gold/90 transition">
                 <MessageCircle className="w-4 h-4" /> WhatsApp to Book
               </a>
               <a href={EMAIL_URL} className="inline-flex items-center gap-2 bg-transparent border-2 border-cream/40 text-cream px-8 py-4 rounded-full font-bold hover:bg-cream hover:text-forest-deep transition">
@@ -447,10 +447,11 @@ function Home() {
         <div className="container-px max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-2 max-w-sm">
             <div className="flex items-center gap-2.5">
-              <span className="grid place-items-center w-10 h-10 rounded-xl bg-gold text-forest-deep">
-                <BookOpen className="w-5 h-5" />
-              </span>
-              <span className="font-display text-xl font-bold text-cream">Reita Learning Studio</span>
+              <img 
+                src={logoAsset.src} 
+                alt="Reita Learning Studio Logo" 
+                className="h-14 w-auto"
+              />
             </div>
             <p className="mt-5 font-display italic text-gold text-lg">
               Let's build confident readers together.
@@ -482,8 +483,12 @@ function Home() {
               </li>
             </ul>
             <div className="mt-5 flex gap-3">
-              <a href="#" aria-label="Instagram" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition"><Instagram className="w-4 h-4" /></a>
-              <a href="#" aria-label="Facebook" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition"><Facebook className="w-4 h-4" /></a>
+              <a href="#" aria-label="Instagram" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" aria-label="Facebook" className="grid place-items-center w-10 h-10 rounded-xl border border-cream/15 hover:bg-gold hover:text-forest-deep hover:border-gold transition">
+                <Facebook className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -498,4 +503,3 @@ function Home() {
     </div>
   );
 }
-
