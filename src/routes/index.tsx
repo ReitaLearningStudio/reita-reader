@@ -136,14 +136,50 @@ function Home() {
             {navOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
-        {navOpen && (
-          <div className="md:hidden border-t border-border bg-background container-px py-4 flex flex-col gap-3">
-            {nav.map(n => (
-              <a key={n.href} href={n.href} onClick={() => setNavOpen(false)} className="py-2 text-foreground/80">
-                {n.label}
-              </a>
-            ))}
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setNavOpen(false)} className="mt-2 inline-flex justify-center items-center gap-2 bg-forest text-cream px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forest/90 transition">
+          {navOpen && (
+  <div className="md:hidden border-t border-border bg-background container-px py-4 flex flex-col gap-3">
+    {nav.map((n) => (
+      <a
+        key={n.href}
+        href={n.href}
+        onClick={() => setNavOpen(false)}
+        className="py-2 text-foreground/80"
+      >
+        {n.label}
+      </a>
+    ))}
+
+    <a
+      href={WHATSAPP_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => setNavOpen(false)}
+      className="mt-2 inline-flex items-center gap-2"
+    >
+      Book Free Assessment <ArrowRight className="w-4 h-4" />
+    </a>
+  </div>
+)}
+    </header>
+    <a
+      href={WHATSAPP_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => setNavOpen(false)}
+      className="mt-2 inline-flex items-center gap-2"
+    >
+      Book Free Assessment <ArrowRight className="w-4 h-4" />
+    </a>
+  </div>
+)}
+
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setNavOpen(false)}
+              className="mt-2 inline-flex items-center gap-2"
+            >
               Book Free Assessment <ArrowRight className="w-4 h-4" />
             </a>
           </div>
