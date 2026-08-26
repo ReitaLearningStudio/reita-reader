@@ -148,7 +148,7 @@ function Home() {
         {n.label}
       </a>
     ))}
-
+  )}
     <a
       href={WHATSAPP_URL}
       target="_blank"
@@ -161,30 +161,10 @@ function Home() {
   </div>
 )}
     </header>
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => setNavOpen(false)}
-      className="mt-2 inline-flex items-center gap-2"
-    >
-      Book Free Assessment <ArrowRight className="w-4 h-4" />
-    </a>
-  </div>
-)}
+ 
 
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setNavOpen(false)}
-              className="mt-2 inline-flex items-center gap-2"
-            >
-              Book Free Assessment <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-        )}
-      </header>
+         
+   
 
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
