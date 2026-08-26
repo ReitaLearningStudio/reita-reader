@@ -148,7 +148,7 @@ function Home() {
         {n.label}
       </a>
     ))}
-  )}
+  
     <a
       href={WHATSAPP_URL}
       target="_blank"
