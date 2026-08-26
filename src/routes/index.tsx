@@ -355,15 +355,24 @@ function Home() {
               Hello, I'm <span className="italic">Rita Onyia</span>.
             </h2>
             <div className="mt-6 space-y-4 text-foreground/75 leading-relaxed text-lg">
-              <p>I'm the founder of Reita Learning Studio. I hold a Bachelor's Degree in Early Childhood Education and i am passionate about helping children develop the literacy skills they need to succeed in school and in life.</p>
-              <p>Through personalised instruction and evidence-based teaching strategies, our academy helps children become confident, capable and enthusiastic readers.</p>
-            </div>
+            
+<p>
+  Onyia Ogochukwu Rita, professionally known as Rita Onyia, is a TRCN-licensed teacher, reading specialist, and the founder of Reita Learning Studio, an international online literacy academy helping children aged 3–14 build strong reading skills and confidence.
+</p>
+
+<p>
+  She holds a Bachelor’s Degree in Early Childhood Education from the University of Nigeria, Nsukka, and has experience teaching children and adult learners through online education.
+</p>
+
+<p>
+  Her work focuses on foundational literacy, phonics, reading fluency, vocabulary, spelling, and reading comprehension, using evidence-based and child-centred teaching approaches.
+</p>
             <div className="mt-8 grid sm:grid-cols-2 gap-3">
               {[
                 "Bachelor's Degree in Early Childhood Education",
                 "TEFL Certified English Teacher",
                 "TRCN Licensed Teacher",
-                "Special Educational Needs (SEN) Trained",
+                "Reading and Literacy Educator"
               ].map(q => (
                 <div key={q} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-4">
                   <CheckCircle2 className="w-5 h-5 text-gold shrink-0 mt-0.5" />
